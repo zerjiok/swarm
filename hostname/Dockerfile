@@ -1,4 +1,4 @@
-FROM node:10
+FROM node:latest
 
 COPY ["package.json", "package-lock.json", "/usr/src/"]
 

@@ -9,6 +9,9 @@ services:
       - db
     ports:
       - "3000:3000"
+    deploy:
+      placement:
+        constraints: [node.role==worker]
 
   db:
     image: mongo
